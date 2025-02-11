@@ -15,30 +15,30 @@ Este proyecto permite migrar una base de datos MySQL a una base de datos SQLite 
 1. Clona este repositorio.
 2. Ejecuta el siguiente comando para instalar las dependencias necesarias:
 
-    ```bash
+    \```bash
     bash install_mac.sh
-    ```
+    \```
 
 3. Una vez completada la instalación, puedes ejecutar el script con:
 
-    ```bash
+    \```bash
     python3 main.py
-    ```
+    \```
 
 ### En Linux
 
 1. Clona este repositorio.
 2. Ejecuta el siguiente comando para instalar las dependencias necesarias:
 
-    ```bash
+    \```bash
     bash install_linux.sh
-    ```
+    \```
 
 3. Una vez completada la instalación, puedes ejecutar el script con:
 
-    ```bash
+    \```bash
     python3 main.py
-    ```
+    \```
 
 ## Configuración de conexión a MySQL
 
@@ -46,21 +46,23 @@ Para conectarte a tu base de datos MySQL, debes modificar algunas variables dent
 
 En el archivo `main.py`, localiza el siguiente bloque de código:
 
-```python
+\```python
 mysql_conn = mysql.connector.connect(
     host='localhost',         # Dirección del servidor MySQL (por defecto es 'localhost')
     user='root',              # Tu usuario de MySQL (por defecto 'root')
     password='password',      # Tu contraseña de MySQL
     database=mysql_db_name   # El nombre de la base de datos MySQL que deseas migrar
 )
+\```
+
 ## Uso
 
 1. Coloca tu archivo `.sql` de MySQL en el directorio raíz del proyecto.
 2. Ejecuta el script con:
 
-    ```bash
+    \```bash
     python3 main.py
-    ```
+    \```
 
 3. El script te pedirá que ingreses el nombre de la base de datos MySQL y el nombre que deseas para la base de datos SQLite.
 4. El proceso de migración comenzará y tu base de datos SQLite estará lista.
