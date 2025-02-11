@@ -40,6 +40,19 @@ Este proyecto permite migrar una base de datos MySQL a una base de datos SQLite 
     python3 main.py
     ```
 
+## Configuración de conexión a MySQL
+
+Para conectarte a tu base de datos MySQL, debes modificar algunas variables dentro del archivo `main.py`.
+
+En el archivo `main.py`, localiza el siguiente bloque de código:
+
+```python
+mysql_conn = mysql.connector.connect(
+    host='localhost',         # Dirección del servidor MySQL (por defecto es 'localhost')
+    user='root',              # Tu usuario de MySQL (por defecto 'root')
+    password='password',      # Tu contraseña de MySQL
+    database=mysql_db_name   # El nombre de la base de datos MySQL que deseas migrar
+)
 ## Uso
 
 1. Coloca tu archivo `.sql` de MySQL en el directorio raíz del proyecto.
