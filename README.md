@@ -46,14 +46,16 @@ Para conectarte a tu base de datos MySQL, debes modificar algunas variables dent
 
 En el archivo `main.py`, localiza el siguiente bloque de código:
 
-\```python
+<pre><code class="python">
 mysql_conn = mysql.connector.connect(
     host='localhost',         # Dirección del servidor MySQL (por defecto es 'localhost')
     user='root',              # Tu usuario de MySQL (por defecto 'root')
     password='password',      # Tu contraseña de MySQL
     database=mysql_db_name   # El nombre de la base de datos MySQL que deseas migrar
 )
-\```
+</code></pre>
+
+
 
 ## Uso
 
